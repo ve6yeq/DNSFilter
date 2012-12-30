@@ -28,6 +28,7 @@
 		5E479B49168FBC6B00571E65 /* DNSFilter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DNSFilter; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E479B4D168FBC6B00571E65 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5E479B4F168FBC6B00571E65 /* DNSFilter.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DNSFilter.1; sourceTree = "<group>"; };
+		5E479B5B168FC17A00571E65 /* blacklist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blacklist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		5E479B4C168FBC6B00571E65 /* DNSFilter */ = {
 			isa = PBXGroup;
 			children = (
+				5E479B5B168FC17A00571E65 /* blacklist */,
 				5E479B4D168FBC6B00571E65 /* main.c */,
 				5E479B4F168FBC6B00571E65 /* DNSFilter.1 */,
 			);
