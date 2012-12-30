@@ -1,0 +1,33 @@
+.\"Modified from man(1) of FreeBSD, the NetBSD mdoc.template, and mdoc.samples.
+.\"See Also:
+.\"man mdoc.samples for a complete listing of options
+.\"man mdoc for the short list of editing options
+.\"/usr/share/misc/mdoc.template
+.Dd 12/29/12
+.Dt DNSFilter 1 CON
+.Os Darwin
+.Sh NAME
+.Nm DNSFilter
+.Nd Filter DNS requests as a brute force way of cutting down on the amount of advertisements when web browsing.
+.Sh SYNOPSIS
+.Nm
+.Op Fl v
+.Op Fl d Ar divert_port_num
+.Op Fl r Ar ipfw_rule_num
+.Ar blacklist_file ...
+.Sh DESCRIPTION
+Brute force filter all DNS requests by intercepting them using the Darwin ipfw
+packet divert functionality and then send back fake not found responses to
+requests that match provided blacklists.
+.Sh OPTIONS
+.Bl -tag -width -indent
+.It Fl v
+Enable verbose output
+.It Fl d Ar divert_port_num
+Configure the ipfw diversion port number
+.It Fl r Ar ipfw_rule_num
+Configure the ipfw rule number to use for the diversion rule
+.El
+.Pp
+.Sh AUTHORS
+.An "Craig Newell" Aq craign@ieee.org
